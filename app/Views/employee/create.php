@@ -14,7 +14,7 @@
                 <div class = "card">
                     <div class = "card- header">
                         <h4> Add Employee
-                            <a href="<?= base_url('codeigniter_pjnew/public/employee') ?>" class="btn btn-danger float-end">Back</a>
+                            <a href="<?= base_url('employee') ?>" class="btn btn-danger float-end">Back</a>
                         </h4>
                     </div>
                     <div class= "card-body">

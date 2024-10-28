@@ -1,6 +1,7 @@
 <?php  namespace App\Controllers;
 
 use App\Models\Employee;
+use CodeIgniter\Log\Logger;
 
 class EmployeeController extends BaseController{
     public function Index()
@@ -25,12 +26,10 @@ class EmployeeController extends BaseController{
             'email'=>$this->request->getpost('email'),
             'phone'=>$this->request->getpost('phone'),
             'designation'=>$this->request->getpost('designation'),
-
-
         ];
         
         $employee->save($data);
-        return redirect()->to(base_url('codeigniter_pjnew/public/employee'))->with('status','Employee Added successsfully');
+        return redirect()->route('employee')->with('success','Employee Added successfully');
         
         }
     }

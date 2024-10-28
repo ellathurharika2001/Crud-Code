@@ -20,7 +20,7 @@
                 <div class = "card">
                     <div class = "card- header">
                         <h4>Employee Data
-                            <a href="<?= base_url('codeigniter_pjnew/public/employee-add') ?>" class="btn btn-primary float-end">Add Employee</a>
+                            <a href="<?= base_url('employee-add') ?>" class="btn btn-primary float-end">Add Employee</a>
                         </h4>
                     </div>
                     <div class= "card-body">
